@@ -259,12 +259,12 @@ const D=[
  coverage:['Zone 2 Aerobic','Hip Mobility','Ankle Mobility','VMO (optional)','Balance Benchmark'],
  slots:[
   {l:'A',t:'AM · Zone 2 Cardio · 35–45 min',s:[
-    {name:'Health Bounce Warm-Up',r:'5 min',e:'Rebounder',
-     note:'Gentle vertical bounce, low amplitude. Wakes up the lymphatic system and primes the joints before Zone 2 loading.'},
-    {name:'Rebounder Zone 2',r:'25–30 min',e:'Rebounder',
-     note:'Jog in place, lateral steps, hip twists, jumping jacks — vary movement every few minutes. 60–70% max heart rate. Conversational but not comfortable. Substitute or combine with a 35-min outdoor walk.'},
+    {name:'Sanddune Stepper Warm-Up',r:'5 min',e:'Sanddune',
+     note:'Easy pace on the Sanddune to warm up the feet, ankles, and calves before the Zone 2 block.'},
+    {name:'Sanddune Stepper — Zone 2',r:'25–30 min',e:'Sanddune',
+     note:'Steady walking on the Sanddune stepper — 60–70% max heart rate. Vary your stride length and pace every few minutes. The unstable surface adds foot and ankle activation you don't get on flat ground. Substitute with a 35-min outdoor walk if preferred.'},
     {name:'Sanddune Stepper Walk',r:'10 min',e:'Sanddune',
-     note:'Optional cooldown after the rebounder. Foot and ankle activation at low intensity.'},
+     note:'Optional cooldown after the Zone 2 block. Easy pace — keeps blood moving and adds more foot and ankle activation.'},
   ]},
   {l:'B',t:'PM · Extended Mobility + Optional Flywheel · 35 min',s:[
     {name:'Couch Stretch',r:'3 min each side',e:'Floor',
@@ -382,7 +382,7 @@ function go(i){active=i;renderStrip();renderDay();document.getElementById('scrol
 document.getElementById('dt').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
 renderStrip();renderDay();
 
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+
 </script>
 </body>
 </html>
